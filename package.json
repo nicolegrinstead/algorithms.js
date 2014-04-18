@@ -1,0 +1,15 @@
+{
+  "name": "algorithms-in-js",
+  "version": "0.0.1",
+  "author": "Nicole Grinstead <nicolergrinstead@gmail.com>",
+  "description": "an exercise in implementing various algorithms in JavaScript",
+  "contributors": [
+    {
+      "name": "Nicole Grinstead",
+      "email": "nicolergrinstead@gmail.com>"
+    }
+  ],
+  "dependencies": {
+    "mocha": "*"
+  }
+}
