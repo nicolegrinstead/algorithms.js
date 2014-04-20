@@ -31,6 +31,7 @@ BinarySearchTree.prototype.addNode = function(itemValue, node){
 
 }
 
+//still need a little work for some edge cases like removing a root node
 BinarySearchTree.prototype.removeNode = function(deleteValue, node, parent){
 	var currentNode = node ? node : this.rootNode;
 	var parent = parent ? parent : this.rootNode;
