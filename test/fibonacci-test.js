@@ -25,4 +25,10 @@ describe('Fibonacci', function(){
     
     assert.equal(144, fib);
   })
+
+  it ('can run faster if its been memoized', function(){ 
+    var fibMemo = app.memoizedFib(20);
+
+    assert.equal(6765,fibMemo);
+  })
 })
