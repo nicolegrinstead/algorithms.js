@@ -46,4 +46,46 @@ LinkedList.prototype.findLength = function(){
 	return len;
 }
 
+//o(n) complexity
+LinkedList.prototype.reverse = function(){ 
+	var previousItem = null; 
+	var itemPointer = this.headItem;
+
+	while(itemPointer.nextItem){ 
+		var next = itemPointer.nextItem;
+		itemPointer.nextItem = previousItem; 
+
+		previousItem = itemPointer;
+		itemPointer = next;
+	}
+
+	itemPointer.nextItem = previousItem;
+	this.headItem = itemPointer;
+}
+
+//o(n) coplexity
+LinkedList.prototype.findMedian = function(){ 
+	var middlePointer = this.headItem; 
+ 	var skippingPointer = this.headItem;
+
+	while(skippingPointer.nextItem && skippingPointer.nextItem.nextItem){ 
+		middlePointer = middlePointer.nextItem;
+		skippingPointer = skippingPointer.nextItem.nextItem;
+	}
+
+	return even(this.findLength()) ? average(middlePointer.itemValue, middlePointer.nextItem.itemValue) : middlePointer.itemValue;
+}
+
+function average(){ 
+	var total = 0; 
+	for (var i = 0; i < arguments.length; i++){ 
+		total += arguments[i];
+	}
+	return total/arguments.length;
+}
+
+function even(number){
+	return number % 2 ==0 
+}
+
 module.exports = LinkedList;
