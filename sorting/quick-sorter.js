@@ -1,4 +1,4 @@
-var random = require('./random.js');
+var random = require('../helpers/random.js');
 
 //sorts in o(n log(n)) worst case
 function quickSort(itemsToSort){

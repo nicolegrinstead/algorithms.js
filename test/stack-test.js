@@ -1,4 +1,4 @@
-var Stack = require('../stack.js');
+var Stack = require('../data-structures/stack.js');
 var assert = require("assert");
 
 describe('Stack', function(){

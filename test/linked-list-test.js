@@ -1,4 +1,4 @@
-var LinkedList = require('../linked-list.js');
+var LinkedList = require('../data-structures/linked-list.js');
 var assert = require("assert");
 
 describe('Linked List', function(){

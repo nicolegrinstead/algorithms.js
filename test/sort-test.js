@@ -1,9 +1,9 @@
-var insertionSorter = require('../insertion-sorter.js');
-var bubbleSorter = require('../bubble-sorter.js');
-var quickSorter = require('../quick-sorter.js');
-var mergeSorter = require('../merge-sorter.js');
-var partialSorter = require('../partial-sorter.js');
-var random = require('../random.js');
+var insertionSorter = require('../sorting/insertion-sorter.js');
+var bubbleSorter = require('../sorting/bubble-sorter.js');
+var quickSorter = require('../sorting/quick-sorter.js');
+var mergeSorter = require('../sorting/merge-sorter.js');
+var partialSorter = require('../sorting/partial-sorter.js');
+var random = require('../helpers/random.js');
 var assert = require("assert");
 
 var sorted = [];
