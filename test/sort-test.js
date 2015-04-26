@@ -6,7 +6,6 @@ var partialSorter = require('../sorting/partial-sorter.js');
 var random = require('../helpers/random.js');
 var assert = require("assert");
 
-
 var sorted = [];
 var unsorted = [];
 
